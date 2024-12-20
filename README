@@ -1,0 +1,49 @@
+The model has been run on 5 prediction model with results based on MSE and R^2.
+The values taken are in ratio 70:30(70 for training  and 30 testing).
+The final results are stored in model_results.csv
+FLOW IS AS FOLLOWS-
+1. Import Libraries
+
+pandas for data manipulation.
+
+scikit-learn for preprocessing, model training, and evaluation.
+
+2. Load Dataset
+
+The dataset is loaded into a Pandas DataFrame. Ensure the CSV file is in the correct directory, or update the file path in the code.
+
+3. Data Preparation
+
+Feature Selection: The features (F1 to F15) are selected as predictors.
+
+Target Selection: Target1 is used as the response variable.
+
+Train-Test Split: The dataset is split into 70% training and 30% testing data.
+
+Standardization: The features are standardized for consistent scaling using StandardScaler.
+
+4. Model Training
+
+The following models are trained:
+
+Linear Regression
+
+Decision Tree Regressor
+
+Random Forest Regressor
+
+Gradient Boosting Regressor
+
+Support Vector Regressor (SVR)
+
+5. Model Evaluation
+
+Each model is evaluated using:
+
+Mean Squared Error (MSE): Measures average squared errors.
+
+R² Score: Indicates how well the model explains variance in the target variable.
+
+6. Save Results
+
+Model results (MSE and R²) are saved to a CSV file (model_results.csv) for reference.
